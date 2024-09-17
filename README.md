@@ -55,11 +55,6 @@ This project is about the Train-Ticket-Reservation-System which is used to view 
 
 ### ========== Dummy Database Initialization ===========
 
-STEP 1: Open SQL Plus OR SQL Developer
-
-STEP 2: Login and connect to database using administrator username and password
-
-STEP 3 :Execute the below command first to create a new user:
 
 ```SQL
 
@@ -68,10 +63,7 @@ CREATE USER RESERVATION IDENTIFIED BY MANAGER;
 GRANT DBA TO RESERVATION;
 COMMIT;
 
-```
-NOTE: If the above command fails for alter session issues, try to remove first line and then execute it.
 
-STEP 4: Now execute the below sql query in same terminal
 
 ```SQL
 
@@ -131,13 +123,9 @@ INSERT INTO RESERVATION.TRAIN VALUES(10004,'JAN SATABDI EXP','RANCHI','PATNA', 1
 INSERT INTO RESERVATION.TRAIN VALUES(10005,'GANGE EXP','MUMBAI','KERALA', 12, 945);
 INSERT INTO RESERVATION.TRAIN VALUES(10006,'GARIB RATH EXP','PATNA','DELHI', 1, 1450.75);
 
-INSERT INTO RESERVATION.HISTORY VALUES('BBC374-NSDF-4673','shashi@demo.com',10001,TO_DATE('02-FEB-2024'), 'HOWRAH', 'JODHPUR', 2, 981);
-INSERT INTO RESERVATION.HISTORY VALUES('BBC375-NSDF-4675','shashi@demo.com',10004,TO_DATE('12-JAN-2024'), 'RANCHI', 'PATNA', 1, 550);
-INSERT INTO RESERVATION.HISTORY VALUES('BBC373-NSDF-4674','shashi@demo.com',10006,TO_DATE('22-JULY-2024'), 'PATNA', 'DELHI', 3, 4352.25);
-
 COMMIT;
 ```
-STEP 5: Now Execute the below query one by one to check if the tables are created successfully
+
 ```SQL
 SELECT * FROM ADMIN;
 SELECT * FROM CUSTOMER;
@@ -145,7 +133,7 @@ SELECT * FROM TRAIN;
 SELECT * FROM HISTORY;
 
 ```
-Note: If any of the above commands fails, please try to fix it first and then proceed to next step
+
 	
 
 
